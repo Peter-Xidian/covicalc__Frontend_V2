@@ -216,7 +216,6 @@ img {
   align-items: center;
 }
 
-/* ----------- */
 .select {
   width: 18rem;
   height: 3.25rem;
@@ -255,6 +254,7 @@ img {
     padding-box;
   background-position: 50% 50%;
   opacity: 0.56;
+  cursor: pointer;
 }
 
 .select_country--name_wrapper {
@@ -270,11 +270,11 @@ img {
 }
 
 .select__country--name:hover {
-  background: var(--select-list-bg-hover-color);
+  background: #eee;
 }
 
 .select__list--selected {
-  background: var(--select-list-bg-hover-color);
+  background: #ccc;
 }
 
 .d-select {
@@ -295,13 +295,18 @@ img {
 
 .select__country--name--list {
   position: absolute;
-  width: 288px;
-  max-height: 100vh;
-  background-color: var(--select-list-dropdown-container-color);
-  bottom: -120px;
+  width: 18rem;
+  height: 16rem;
+  font-family: var(--body-font-b);
+  font-weight: 400;
+  background: var(--white) 0% 0% no-repeat padding-box;
+  border-radius: 0px 0px 6px 6px;
+  top: 55;
   left: 0;
-  border: 1px solid var(--select-list-dropdown-container-border-color);
-  z-index: 10;
+  /* border: 1px solid red; */
+  z-index: 30;
+  overflow: auto;
+  padding: 0.5rem 1rem;
 }
 
 .img__fluid {
@@ -309,8 +314,6 @@ img {
   height: 1.125px;
   object-fit: contain;
 }
-
-/* -------------------------- */
 
 form {
   display: flex;
@@ -321,21 +324,6 @@ form {
   height: auto;
   margin: 0;
 }
-
-/* #country {
-  width: 18rem;
-  height: 3.25rem;
-  background: var(--white) 0% 0% no-repeat padding-box;
-  border-radius: 6px 0px 0px 6px;
-  opacity: 1;
-  border: none;
-  margin-right: 0.1875rem;
-  text-align: left;
-  font: normal normal bold 1rem var(--body-font);
-  letter-spacing: 0px;
-  color: var(--black);
-  opacity: 1;
-} */
 
 #date {
   width: 14.6875rem;
@@ -350,6 +338,7 @@ form {
   color: var(--black);
   opacity: 1;
   padding: 0 1rem;
+  transition: all 0.3s;
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -459,6 +448,7 @@ form {
   text-align: center;
   letter-spacing: 0rem;
   opacity: 1;
+  margin-left: 1rem;
 }
 
 .stats__card h3 {
@@ -877,19 +867,36 @@ footer h3 {
     width: 70%;
     height: auto;
     padding: 0.5rem;
+    flex-direction: column;
+  }
+
+  .select {
+    width: 100%;
+    height: 3.25rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s;
+  }
+
+  .select__country--name--list {
+    position: absolute;
+    width: 100%;
+    height: 16rem;
+    font-family: var(--body-font-b);
+    font-weight: 400;
+    background: var(--white) 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 6px 6px;
+    top: 55;
+    left: 0;
+    /* border: 1px solid red; */
+    z-index: 30;
+    overflow: hidden;
   }
 
   form {
     flex-direction: column;
     margin: 0;
-  }
-
-  #country {
     width: 100%;
-    height: 3.25rem;
-    background: var(--white) 0% 0% no-repeat padding-box;
-    border-radius: 6px 6px 0px 0px;
-    margin-bottom: 0.5rem;
   }
 
   #date {

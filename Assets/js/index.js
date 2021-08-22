@@ -1,16 +1,16 @@
-/*==================== SHOW SCROLL TOP ====================*/ 
-function scrollTop(){
-    const scrollTop = document.getElementById('scroll-top');
-    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll');
+/*==================== SHOW SCROLL TOP ====================*/
+function scrollTop() {
+  const scrollTop = document.getElementById("scroll-top");
+  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+  if (this.scrollY >= 560) scrollTop.classList.add("show-scroll");
+  else scrollTop.classList.remove("show-scroll");
 }
-window.addEventListener('scroll', scrollTop);
 
-/*==================== API ====================*/ 
+window.addEventListener("scroll", scrollTop);
+
+/*==================== API ====================*/
 
 /* ==== PER COUNTRY ====*/
-
-
 
 // const totalNumber = document.querySelector('#total__num')
 
@@ -21,22 +21,14 @@ window.addEventListener('scroll', scrollTop);
 //     console.log(to_json);
 // }
 
-// const test = document.querySelector('test')
-// const pCases = document.querySelector("p__cases")
-// const hospitalized = document.querySelector("hospitalized")
-// const recovered = document.querySelector('recovered')
-// const deaths = document.querySelector("deaths")
-// const vaccinated = document.querySelector("vaccinated")
-
-
 /* ==== PER CONTINENTS ====*/
 (async function perContinents() {
-  try{
-  const continent = await fetch('https://corona.lmao.ninja/v2/continents');
-  const data = await continent.json();
+  try {
+    const continent = await fetch("https://corona.lmao.ninja/v2/continents");
+    const data = await continent.json();
 
-  let data1 = '';
-  data.map((continentValues) => {
+    let data1 = "";
+    data.map((continentValues) => {
       data1 += `<div class="thumbnail">
       <div class="t__info">
         <h3>${continentValues.continent}</h3>
@@ -62,11 +54,10 @@ window.addEventListener('scroll', scrollTop);
           <span>Total Vaccinated: 14,784,254</span>
         </div>
       </div>
-    </div>`
-  });
-  document.getElementById('slider').innerHTML=data1;
-  }catch(e){
+    </div>`;
+    });
+    document.getElementById("slider").innerHTML = data1;
+  } catch (e) {
     console.log(e);
   }
-  
 })();
