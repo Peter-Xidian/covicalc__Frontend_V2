@@ -28,8 +28,8 @@ This website requires no modules.
 
 Installation
 -------------
-Simply install a browser of your choice (preferrably Chrome)
-Enter and search for URL() [The website should be loaded & displayed in a few seconds]
+- Simply install a browser of your choice (preferrably Chrome)
+- Enter and search for URL() | "The website should be loaded & displayed in a few seconds"
 
 Support
 --------
