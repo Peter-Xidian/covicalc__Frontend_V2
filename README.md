@@ -1,24 +1,42 @@
 # covicalc__Frontend_V2COVICALC One Page Covid Calculator
 
-Introduction
-Requirements
-Installation
+- Introduction
+- Technologies
+- Requirements
+- Installation
+- Support
+- Author
 
 Covicalc is a simple one page COVID calculator that pulls data from an open COVID API created to share real time updates on COVID statistics world wide. The implementations strives to be simple and free of unneccessary dependencies.
 
-It uses the API (https://documenter.getpostman.com/view/11144369/Szf6Z9B3?version=latest) to automatically retrieve relevant statistcal information pertaining to continents & countries world wide.
+It uses the NovelCOVID API (https://documenter.getpostman.com/view/11144369/Szf6Z9B3?version=latest) to automatically retrieve relevant statistcal information pertaining to continents & countries world wide, displayed via a minimalistic visually pleasing & easily navigable interface.
 
-#Requirements
-This website reuires no modules.
+Technologies
+-------------
+Technolgies used:
+- HTML5
+- CSS3
+- Javascript ES6
 
-#Installation
+Resources
+----------
+NovelCOVID API (github.com/NovelCOVID/API) [https://documenter.getpostman.com/view/11144369/Szf6Z9B3?version=latest]
+
+Requirements
+-------------
+This website requires no modules.
+
+Installation
+-------------
 Simply install a browser of your choice (preferrably Chrome)
-Enter and search for URL()
+Enter and search for URL() [The website should be loaded & displayed in a few seconds]
 
-#Support
+Support
+--------
 Email us at: itopaodebode@gmail.com
 
-#Author
+Author
+-------
 Awesomity Lab | Designer
 Mayowa Odebode | Developer
 
