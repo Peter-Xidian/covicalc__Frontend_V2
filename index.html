@@ -1,0 +1,387 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=-- CSS --=-->
+    <link rel="stylesheet" href="/Assets/css/style.css" />
+
+    <!--=-- CSS --=-->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Covicalc</title>
+  </head>
+
+  <body>
+    <!-----===== SCROLL TOP =====----->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-chevron-up s__icon"></i>
+    </a>
+
+    <!-----===== NAV =====----->
+    <nav class="main__nav" id="main-nav">
+      <!-- <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div> -->
+
+      <div class="nav__img"></div>
+
+      <!-- <div class="rnav" id="rnav-menu">
+        <div class="nav__close">
+          <i class="bx bx-x" id="nav-close"></i>
+        </div> -->
+
+        <a href="" class="nav__btn" id="nav-btn">Contact</a>
+      </div>
+    </nav>
+
+    <!-----===== HERO SECTION =====----->
+    <section class="hero">
+      <div class="hero__info">
+        <h1>Updates</h1>
+        <p>Search a country</p>
+      </div>
+
+      <div class="search__bar">
+        <div class="select">
+
+          <div class="select__country--flag">
+            <img
+              src="https://disease.sh/assets/img/flags/af.png"
+              alt="Rwanda"
+              class="img_fluid select_flag--img"
+            />
+          </div>
+          
+          <div class="select_country--name_wrapper"> 
+            <p class="select__country--name--selected">Rwanda</p>
+  
+            <div class="select__country--name--list d-select">
+              <p class="select__country--name">Ghana</p>
+              <p class="select__country--name">Nigeria</p>
+              <p class="select__country--name">Kenya</p>
+            </div>
+          </div>
+          <div class="select__country--arrowDown">
+            <i class="drop_down_arrow"></i>
+          </div>
+        </div>
+
+        <form>
+          <input type="date" name="date" id="date" />
+          <input type="button" value="SUBMIT" id="btn" />
+        </form>
+      </div>
+    </section>
+
+    <!-----===== STATISTICS =====----->
+    <section class="statistics">
+      <div class="stats__total">
+        <h2 id="total__num">2, 188,881</h2>
+        <p>Cumulatively</p>
+      </div>
+      <div class="stats__info">
+        <div class="stats__list">
+          <div class="stats__card">
+            <h3 id="test">11,270</h3>
+            <p>Tests</p>
+            <span>2,188,881</span>
+          </div>
+          <div class="stats__card">
+            <h3 id="p__cases">619</h3>
+            <p>Positive Cases</p>
+            <span>4,254</span>
+          </div>
+          <div class="stats__card">
+            <h3 id="hospitalized">20</h3>
+            <p>Hospitalized</p>
+            <span>1,886</span>
+          </div>
+          <div class="stats__card">
+            <h3 id="recovered">19</h3>
+            <p>Recovered</p>
+            <span>88,881</span>
+          </div>
+          <div class="stats__card">
+            <h3 id="deaths">9</h3>
+            <p>Deaths</p>
+            <span>920</span>
+          </div>
+          <div class="stats__card">
+            <h3 id="vaccinated">48,660</h3>
+            <p>Vaccinated</p>
+            <span>729,130</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-----===== PER CONTINENTS =====----->
+    <section class="per__continents">
+      <h2>PER CONTINENTS</h2>
+
+      <div class="slide-container">
+        <div id="slide-left">
+          <img src="/Assets/img/arrow-left.png" alt="left" class="arrow-left" />
+        </div>
+
+        <section class="container" id="slider">
+          <!-- <div class="thumbnail">
+            <div class="t__info">
+              <h3>Africa</h3>
+              <h2>11,270</h2>
+              <p>New Cases</p>
+              <span>All Cases: 22,188,881</span>
+            </div>
+
+            <div class="t__stats">
+              <div class="ts__a">
+                <h2>619</h2>
+                <p>New Deaths</p>
+                <span>Total Deaths: 4,254</span>
+              </div>
+              <div class="ts__b">
+                <h2>12,955</h2>
+                <p>Newly Recovered</p>
+                <span>Total Recovered: 12,254,254 </span>
+              </div>
+              <div class="ts__c">
+                <h2>1,878,564</h2>
+                <p>New Vaccinated</p>
+                <span>Total Vaccinated: 14,784,254</span>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="thumbnail">
+            <div class="t__info">
+              <h3>Antartica</h3>
+              <h2>11,270</h2>
+              <p>New Cases</p>
+              <span>All Cases: 22,188,881</span>
+            </div>
+
+            <div class="t__stats">
+              <div class="ts__a">
+                <h2>619</h2>
+                <p>New Deaths</p>
+                <span>Total Deaths: 4,254</span>
+              </div>
+              <div class="ts__b">
+                <h2>12,955</h2>
+                <p>Newly Recovered</p>
+                <span>Total Recovered: 12,254,254 </span>
+              </div>
+              <div class="ts__c">
+                <h2>1,878,564</h2>
+                <p>New Vaccinated</p>
+                <span>Total Vaccinated: 14,784,254</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="thumbnail">
+            <div class="t__info">
+              <h3>Asia</h3>
+              <h2>354,270</h2>
+              <p>New Cases</p>
+              <span>All Cases: 22,188,881</span>
+            </div>
+
+            <div class="t__stats">
+              <div class="ts__a">
+                <h2>619</h2>
+                <p>New Deaths</p>
+                <span>Total Deaths: 4,254</span>
+              </div>
+              <div class="ts__b">
+                <h2>12,955</h2>
+                <p>Newly Recovered</p>
+                <span>Total Recovered: 12,254,254 </span>
+              </div>
+              <div class="ts__c">
+                <h2>1,878,564</h2>
+                <p>New Vaccinated</p>
+                <span>Total Vaccinated: 14,784,254</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="thumbnail">
+            <div class="t__info">
+              <h3>Australia</h3>
+              <h2>11,270</h2>
+              <p>New Cases</p>
+              <span>All Cases: 22,188,881</span>
+            </div>
+
+            <div class="t__stats">
+              <div class="ts__a">
+                <h2>619</h2>
+                <p>New Deaths</p>
+                <span>Total Deaths: 4,254</span>
+              </div>
+              <div class="ts__b">
+                <h2>12,955</h2>
+                <p>Newly Recovered</p>
+                <span>Total Recovered: 12,254,254 </span>
+              </div>
+              <div class="ts__c">
+                <h2>1,878,564</h2>
+                <p>New Vaccinated</p>
+                <span>Total Vaccinated: 14,784,254</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="thumbnail">
+            <div class="t__info">
+              <h3>Europe</h3>
+              <h2>11,270</h2>
+              <p>New Cases</p>
+              <span>All Cases: 22,188,881</span>
+            </div>
+
+            <div class="t__stats">
+              <div class="ts__a">
+                <h2>619</h2>
+                <p>New Deaths</p>
+                <span>Total Deaths: 4,254</span>
+              </div>
+              <div class="ts__b">
+                <h2>12,955</h2>
+                <p>Newly Recovered</p>
+                <span>Total Recovered: 12,254,254 </span>
+              </div>
+              <div class="ts__c">
+                <h2>1,878,564</h2>
+                <p>New Vaccinated</p>
+                <span>Total Vaccinated: 14,784,254</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="thumbnail">
+            <div class="t__info">
+              <h3>North America</h3>
+              <h2>11,270</h2>
+              <p>New Cases</p>
+              <span>All Cases: 22,188,881</span>
+            </div>
+
+            <div class="t__stats">
+              <div class="ts__a">
+                <h2>619</h2>
+                <p>New Deaths</p>
+                <span>Total Deaths: 4,254</span>
+              </div>
+              <div class="ts__b">
+                <h2>12,955</h2>
+                <p>Newly Recovered</p>
+                <span>Total Recovered: 12,254,254 </span>
+              </div>
+              <div class="ts__c">
+                <h2>1,878,564</h2>
+                <p>New Vaccinated</p>
+                <span>Total Vaccinated: 14,784,254</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="thumbnail">
+            <div class="t__info">
+              <h3>South America</h3>
+              <h2>11,270</h2>
+              <p>New Cases</p>
+              <span>All Cases: 22,188,881</span>
+            </div>
+
+            <div class="t__stats">
+              <div class="ts__a">
+                <h2>619</h2>
+                <p>New Deaths</p>
+                <span>Total Deaths: 4,254</span>
+              </div>
+              <div class="ts__b">
+                <h2>12,955</h2>
+                <p>Newly Recovered</p>
+                <span>Total Recovered: 12,254,254 </span>
+              </div>
+              <div class="ts__c">
+                <h2>1,878,564</h2>
+                <p>New Vaccinated</p>
+                <span>Total Vaccinated: 14,784,254</span>
+              </div>
+            </div>
+          </div> -->
+        </section>
+
+        <div id="slide-right">
+          <img src="/Assets/img/arrow-right.png" alt="right" />
+        </div>
+      </div>
+    </section>
+    <!-----===== BIO =====----->
+    <section class="bio">
+      <div class="bio__img"></div>
+      <div class="bio__info">
+        <h3>Mayowa Olaoluwa Odebode</h3>
+        <p>Frontend Developer</p>
+        <span>22 August 2021</span>
+      </div>
+    </section>
+
+    <!-----===== FOOTER =====----->
+    <footer>
+      <h3>REACH ME</h3>
+
+      <div class="main__f">
+        <div class="f__bio">
+          <p>Email</p>
+          <span
+            ><a href="mailto:itopaodebode@gmail.com"
+              >itopaodebode@gmail.com</a
+            ></span
+          >
+        </div>
+
+        <div class="f__bio">
+          <p>Phone</p>
+          <span>+250784928922</span>
+        </div>
+
+        <div class="f__bio">
+          <p>Profile</p>
+          <span
+            ><a href="https://github.com/Peter-Xidian"
+              >github.com/Peter-Xidian</a
+            ></span
+          >
+        </div>
+      </div>
+
+      <div class="mini__f">
+        <p>
+          Developed by
+          <span class="p__span"
+            ><a href="https://github.com/Peter-Xidian">Mayowa Odebode</a></span
+          >
+        </p>
+        <p>
+          Designed by
+          <span class="p__span"
+            ><a href="https://awesomity.rw/">Awesomity Lab</a></span
+          >
+        </p>
+      </div>
+    </footer>
+    <!-----===== JS =====----->
+    <script src="/Assets/js/index.js"></script>
+    <script src="/Assets/js/slider.js"></script>
+    <script src="/Assets/js/countryapi.js"></script>
+  </body>
+</html>
