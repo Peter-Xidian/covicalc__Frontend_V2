@@ -1,4 +1,4 @@
-# covicalc__Frontend_V2COVICALC One Page Covid Calculator
+# COVICALC One Page Covid Calculator (covicalc__Frontend_V2)
 
 - Introduction
 - Technologies
