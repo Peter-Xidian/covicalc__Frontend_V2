@@ -37,8 +37,8 @@ Email us at: itopaodebode@gmail.com
 
 Author
 -------
-Awesomity Lab | Designer
-Mayowa Odebode | Developer
+- Awesomity Lab | Designer
+- Mayowa Odebode | Developer
 
 
 
